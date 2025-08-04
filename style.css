@@ -1,0 +1,55 @@
+/* Reset and base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0e0e1c;
+  color: #f0f0f0;
+}
+
+/* Layout container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Header styles */
+header {
+  background-color: #1f1f3a;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-top: 0.5rem;
+}
+
+/* Main content */
+main section {
+  margin-bottom: 2rem;
+}
+
+main h2 {
+  color: #ffd700;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+/* Footer styles */
+footer {
+  background-color: #1f1f3a;
+  text-align: center;
+  padding: 1rem 0;
+  color: #888;
+}
