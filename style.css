@@ -1,55 +1,136 @@
-/* Reset and base styles */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #0e0e1c;
-  color: #f0f0f0;
+/* — Color Variables — */
+:root {
+  --bg-dark:    #0d0d1a;
+  --bg-light:   #1e1e3a;
+  --accent:     #ffd700;
+  --text-light: #f5f5f5;
+  --text-muted: #aaa;
 }
 
-/* Layout container */
+/* — Global Styles — */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* — Layout Container — */
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 2rem;
 }
 
-/* Header styles */
+/* — Header & Nav — */
 header {
-  background-color: #1f1f3a;
-  text-align: center;
-  padding: 3rem 0;
+  background: var(--bg-light);
 }
 
-header h1 {
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: var(--accent);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* — Hero Section — */
+#hero {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e1e3a, #0d0d1a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#hero .overlay h2 {
   font-size: 3rem;
-  margin: 0;
+  margin-bottom: 1rem;
 }
 
-.tagline {
+#hero .overlay p {
   font-size: 1.2rem;
-  color: #aaa;
-  margin-top: 0.5rem;
-}
-
-/* Main content */
-main section {
   margin-bottom: 2rem;
+  color: var(--text-muted);
 }
 
-main h2 {
-  color: #ffd700;
-  margin-bottom: 0.5rem;
+.btn {
+  background: var(--accent);
+  color: var(--bg-dark);
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
 }
 
-ul {
-  list-style-type: square;
-  padding-left: 1.5rem;
+.btn:hover {
+  background: #e6c200;
 }
 
-/* Footer styles */
-footer {
-  background-color: #1f1f3a;
+/* — Grid Utility — */
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* — Project Cards & Features — */
+.card, .feature {
+  background: var(--bg-light);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.card:hover, .feature:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  max-width: 80px;
+  margin-bottom: 1rem;
+}
+
+/* — Section Headings — */
+h2 {
+  margin-bottom: 1.5rem;
+  color: var(--accent);
   text-align: center;
-  padding: 1rem 0;
-  color: #888;
 }
+
+/* — Footer
