@@ -5,70 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nebulus</title>
   <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Nebulus: A creative tech collective exploring innovation with projects like Citrus and Comet." />
 </head>
 <body>
   <header>
     <div class="container">
       <h1 class="logo">Nebulus</h1>
-      <nav>
+      <nav aria-label="Main navigation">
         <ul>
           <li><a href="#hero">Home</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#future">Future</a></li>
+          <li><a href="#future">Future Plans</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section id="hero">
-    <div class="overlay">
-      <h2>Welcome to Nebulus</h2>
-      <p>Where ideas take orbit</p>
-      <a href="#projects" class="btn">Explore Our Projects</a>
-    </div>
-  </section>
-
-  <main class="container">
-    <section id="projects">
-      <h2>Our Projects</h2>
-      <div class="grid">
-        <div class="card">
-          <!-- Replace src with your Citrus icon/image -->
-          <img src="citrus-icon.svg" alt="Citrus" />
-          <h3>Citrus</h3>
-          <p>Fresh takes on data visualization with intuitive, interactive dashboards.</p>
-        </div>
-        <div class="card">
-          <!-- Replace src with your Comet icon/image -->
-          <img src="comet-icon.svg" alt="Comet" />
-          <h3>Comet</h3>
-          <p>Fast, lightweight scanning tools that zoom through data at warp speed.</p>
-        </div>
+  <main>
+    <section id="hero" class="hero">
+      <div class="overlay container">
+        <h2>Welcome to <strong>Nebulus</strong></h2>
+        <p>Where ideas take orbit.</p>
+        <a href="#projects" class="btn">Explore Our Projects</a>
       </div>
     </section>
 
-    <section id="future">
+    <section id="projects" class="container projects">
+      <h2>Our Projects</h2>
+      <ul class="grid">
+        <li class="card">
+          <img src="citrus-icon.svg" alt="Citrus Icon" />
+          <h3>Citrus</h3>
+          <p>Fresh data visualization: interactive dashboards that breathe life into numbers.</p>
+        </li>
+        <li class="card">
+          <img src="comet-icon.svg" alt="Comet Icon" />
+          <h3>Comet</h3>
+          <p>High-speed scanning tools: warp through data with precision and grace.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="future" class="container future">
       <h2>Future Plans</h2>
-      <div class="grid">
-        <div class="feature">
+      <ul class="grid">
+        <li class="feature">
           <h3>Satellite Integration</h3>
-          <p>Deploying micro-satellites to gather real-time data from orbit.</p>
-        </div>
-        <div class="feature">
+          <p>Deploying micro-satellites for real-time orbital data collection.</p>
+        </li>
+        <li class="feature">
           <h3>NEAR Scanner</h3>
-          <p>Next-Generation Environmental and Atmospheric Research scanner.</p>
-        </div>
-        <div class="feature">
+          <p>Developing the NEAR (Environmental & Atmospheric Research) scanner.</p>
+        </li>
+        <li class="feature">
           <h3>AI-Driven Insights</h3>
-          <p>Leveraging machine learning to predict trends and detect anomalies.</p>
-        </div>
-      </div>
+          <p>Using machine learning to predict trends and detect anomalies early.</p>
+        </li>
+      </ul>
     </section>
   </main>
 
   <footer>
     <div class="container">
-      <p>© 2025 Nebulus. All rights reserved.</p>
+      <p>&copy; 2025 Nebulus. All rights reserved.</p>
     </div>
   </footer>
 </body>
