@@ -2,18 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nebulus – Cosmic Tech Hub</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="scripts.js" defer></script>
+  <meta name="description" content="Nebulus: A creative tech collective exploring innovation with projects like Citrus and Comet.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
-    <div class="container">
-      <h1>Nebulus</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
+    <div class="nav-container container">
+      <a href="#hero" class="logo">Nebulus</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#hero">Home</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#future">Future Plans</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -22,101 +25,70 @@
     </div>
   </header>
 
-  <section id="hero" class="hero">
-    <div class="container">
-      <h2>Welcome to Nebulus</h2>
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <h1>Welcome to <span class="highlight">Nebulus</span></h1>
       <p>Your gateway to cosmic data and next-gen simulations.</p>
       <a href="#features" class="btn">Get Started</a>
     </div>
   </section>
 
-  <section id="about" class="container about">
-    <h2>About Us</h2>
-    <p>Nebulus brings the universe to your desktop. Explore real-time space data, customize visualizations, and push boundaries with powerful simulators.</p>
-  </section>
-
-  <section id="features" class="container features grid">
-    <div class="feature">
-      <h3>Real-time Data Visualization</h3>
-      <p>Stream and display telemetry with live-updating charts and maps.</p>
-    </div>
-    <div class="feature">
-      <h3>Alert & Notification System</h3>
-      <p>Set custom thresholds and receive instant alerts via email or SMS.</p>
-    </div>
-    <div class="feature">
-      <h3>Historical Playback</h3>
-      <p>Replay past events with time-lapse controls and annotations.</p>
-    </div>
-    <div class="feature">
-      <h3>Collaboration Suite</h3>
-      <p>Share dashboards and notes with your team in one click.</p>
-    </div>
-  </section>
-
-  <section id="future" class="container future">
-    <h2>Future Plans</h2>
-    <ul class="grid">
-      <li class="feature">
-        <h3>Satellite Integration</h3>
-        <p>Deploying micro-satellites for real-time orbital data collection.</p>
-      </li>
-      <li class="feature">
-        <h3>NEAR Scanner</h3>
-        <p>Developing the NEAR (Environmental & Atmospheric Research) scanner.</p>
-      </li>
-      <li class="feature">
-        <h3>AI-Driven Insights</h3>
-        <p>Using machine learning to predict trends and detect anomalies early.</p>
-      </li>
-      <li class="feature">
-        <h3>Quantum Telemetry Matrix</h3>
-        <p>Harnessing quantum entanglement to teleport data across light-years.</p>
-      </li>
-      <li class="feature">
-        <h3>Holographic Control Interface</h3>
-        <p>Building a live-3D dashboard you can tweak with hand gestures.</p>
-      </li>
-      <li class="feature">
-        <h3>Interstellar Probe Launcher</h3>
-        <p>Designing micro-probes to scout beyond our solar system.</p>
-      </li>
-      <li class="feature">
-        <h3>Cryo-Sleep Data Vaults</h3>
-        <p>Freezing and archiving massive datasets for centuries-long studies.</p>
-      </li>
-      <li class="feature">
-        <h3>Subspace Communication Network</h3>
-        <p>Setting up an ultra-low-latency relay using subspace channels.</p>
-      </li>
-      <li class="feature">
-        <h3>Simulated Arduino Environment</h3>
-        <p>Write, compile, and debug Arduino sketches right in your browser.</p>
-      </li>
-      <li class="feature">
-        <h3>Apple Vision Pro Simulator</h3>
-        <p>Preview and test spatial computing experiences with Vision Pro emulation.</p>
-      </li>
-      <li class="feature">
-        <h3>Augmented Reality Sandbox</h3>
-        <p>Prototype AR apps with live camera input and overlay tools.</p>
-      </li>
-      <li class="feature">
-        <h3>Edge Device Emulator</h3>
-        <p>Emulate IoT and edge hardware configurations on your PC.</p>
-      </li>
-    </ul>
-  </section>
-
-  <section id="contact" class="container contact">
-    <h2>Contact</h2>
-    <p>Have ideas or questions? Reach us at <a href="mailto:hello@nebulus.io">hello@nebulus.io</a>.</p>
-  </section>
-
-  <footer>
+  <section id="features" class="section features-section">
     <div class="container">
-      <p>&copy; 2025 Nebulus. All rights reserved.</p>
+      <h2 class="section-title">Features</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Real-time Visualization</h3>
+          <p>Stream telemetry with live-updating charts and maps.</p>
+        </div>
+        <div class="card">
+          <h3>Alert System</h3>
+          <p>Set thresholds and get instant alerts via email or SMS.</p>
+        </div>
+        <div class="card">
+          <h3>Historical Playback</h3>
+          <p>Replay events with time-lapse controls and annotations.</p>
+        </div>
+        <div class="card">
+          <h3>Collaboration Suite</h3>
+          <p>Share dashboards and notes with your team in one click.</p>
+        </div>
+      </div>
     </div>
-  </footer>
-</body>
-</html>
+  </section>
+
+  <section id="future" class="section future-section">
+    <div class="container">
+      <h2 class="section-title">Future Plans</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Satellite Integration</h3>
+          <p>Deploying micro-satellites for real-time orbital data.</p>
+        </div>
+        <div class="card">
+          <h3>NEAR Scanner</h3>
+          <p>Developing the NEAR (Environmental & Atmospheric Research) scanner.</p>
+        </div>
+        <div class="card">
+          <h3>AI-Driven Insights</h3>
+          <p>Using machine learning to predict trends and detect anomalies early.</p>
+        </div>
+        <div class="card">
+          <h3>Quantum Telemetry Matrix</h3>
+          <p>Harnessing quantum entanglement to teleport data across light-years.</p>
+        </div>
+        <div class="card">
+          <h3>Holographic Interface</h3>
+          <p>Building a live-3D dashboard you can tweak with hand gestures.</p>
+        </div>
+        <div class="card">
+          <h3>Interstellar Probes</h3>
+          <p>Designing micro-probes to scout beyond our solar system.</p>
+        </div>
+        <div class="card">
+          <h3>Cryo-Sleep Data Vaults</h3>
+          <p>Freezing and archiving massive datasets for centuries-long studies.</p>
+        </div>
+        <div class="card">
+          <h3>Subspace Network</h3>
+          <p>Setting up an ultra-low-latency relay using subspace channels
