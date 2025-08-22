@@ -1,98 +1,160 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta 
-    name="viewport" 
-    content="width=device-width, initial-scale=1.0" 
-  />
-  <title>Steam’s Mythic Tech Portfolio</title>
-  <link 
-    rel="preconnect" 
-    href="https://fonts.googleapis.com" 
-  />
-  <link 
-    rel="preconnect" 
-    href="https://fonts.gstatic.com" 
-    crossorigin 
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <!-- Navigation -->
-  <header class="site-header">
-    <nav class="nav container">
-      <a href="#" class="logo">SteamTech</a>
-      <ul class="nav-list">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#future">Next</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+/* ROOT VARIABLES & RESET */
+:root {
+  --clr-bg: #1a1d23;
+  --clr-alt: #23272e;
+  --clr-accent: #00d8ff;
+  --clr-highlight: #A8E063;
+  --clr-text: #e1e1e6;
+  --ff-base: 'Montserrat', sans-serif;
+}
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero container">
-    <h1>Building Mythic Operating Systems & Tools</h1>
-    <p>
-      From ComeToS written in Python to Citrus Antivirus, Citrus VPN, and CitrusOS—
-      we craft tools that blend technical mastery with storytelling flair.
-    </p>
-    <a href="#projects" class="btn">See Achievements</a>
-  </section>
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  <!-- Projects Section -->
-  <section id="projects" class="section container">
-    <h2>Our Achievements</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>ComeToS</h3>
-        <p>Mythic OS built in Python with lore-driven boot sequences.</p>
-      </div>
-      <div class="card">
-        <h3>Citrus Antivirus</h3>
-        <p>Lightweight, fast, and secure malware protection engine.</p>
-      </div>
-      <div class="card">
-        <h3>Citrus VPN</h3>
-        <p>Encrypted tunnels wrapped in a sleek, user-friendly GUI.</p>
-      </div>
-      <div class="card">
-        <h3>CitrusOS</h3>
-        <p>A unified platform combining Citrus stack tools and UI mood rings.</p>
-      </div>
-    </div>
-  </section>
+body {
+  background: var(--clr-bg);
+  color: var(--clr-text);
+  font-family: var(--ff-base);
+  line-height: 1.6;
+}
 
-  <!-- Future Projects -->
-  <section id="future" class="section container alt-background">
-    <h2>What’s Next?</h2>
-    <ul class="future-list">
-      <li>Spectral Device Mapping Module</li>
-      <li>EcoPhantom Pro Animated Dashboard</li>
-      <li>LeafChain: Blockchain for Sustainability</li>
-      <li>Sentient UI Companion (Emoji-driven)</li>
-    </ul>
-  </section>
+/* LAYOUT CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
 
-  <!-- Contact / Footer -->
-  <footer id="contact" class="site-footer container">
-    <h2>Get in Touch</h2>
-    <p>
-      Interested in collaborating or learning more? Drop me a line at
-      <a href="mailto:steam@example.com">steam@example.com</a>.
-    </p>
-    <div class="social">
-      <a href="#">GitHub</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">Twitter</a>
-    </div>
-    <p class="small">&copy; 2025 SteamTech. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+/* INTRO SECTION */
+.intro {
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--clr-accent);
+}
+
+.screenshot-placeholder {
+  background: var(--clr-alt);
+  border: 2px dashed rgba(0, 216, 255, 0.5);
+  padding: 3rem;
+  border-radius: 6px;
+  color: rgba(225,225,230,0.5);
+}
+
+/* SECTION HEADINGS */
+.section h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--clr-accent);
+}
+
+/* CARD GRID */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--clr-alt);
+  border: 1px solid rgba(0,216,255,0.2);
+  padding: 1.2rem;
+  border-radius: 6px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--clr-highlight);
+}
+
+.card p {
+  font-size: 0.95rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,216,255,0.3);
+}
+
+/* FAKE-SCAN UI */
+.alt-background {
+  background: var(--clr-alt);
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--clr-highlight);
+}
+
+.overview ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.overview li {
+  background: #1C242F;
+  padding: 0.9rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.actions {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  background: var(--clr-highlight);
+  color: var(--clr-bg);
+  border: none;
+  padding: 0.7rem 1.5rem;
+  margin: 0.3rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #B9F07A;
+}
+
+.log h3 {
+  margin-bottom: 0.5rem;
+  color: var(--clr-accent);
+  text-align: center;
+}
+
+#logOutput {
+  background: #1C242F;
+  padding: 1rem;
+  border-radius: 4px;
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+
+/* FOOTER */
+.site-footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+  color: rgba(225,225,230,0.6);
+}
