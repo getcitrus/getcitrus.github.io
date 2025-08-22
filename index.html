@@ -2,43 +2,97 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EcoPhantom Pro</title>
+  <meta 
+    name="viewport" 
+    content="width=device-width, initial-scale=1.0" 
+  />
+  <title>Steam’s Mythic Tech Portfolio</title>
+  <link 
+    rel="preconnect" 
+    href="https://fonts.googleapis.com" 
+  />
+  <link 
+    rel="preconnect" 
+    href="https://fonts.gstatic.com" 
+    crossorigin 
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>🌱 EcoPhantom Pro</h1>
-    <p class="status">Status: <span id="status">Planet-Friendly</span></p>
+  <!-- Navigation -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#" class="logo">SteamTech</a>
+      <ul class="nav-list">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#future">Next</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="overview">
-    <h2>System Overview</h2>
-    <ul>
-      <li>OS: <span id="os">—</span></li>
-      <li>CPU: <span id="cpu">—</span></li>
-      <li>RAM: <span id="ram">—</span></li>
-      <li>Battery: <span id="battery">—</span></li>
-      <li>LeafScore™: <span id="leafscore">—</span></li>
+  <!-- Hero Section -->
+  <section id="hero" class="hero container">
+    <h1>Building Mythic Operating Systems & Tools</h1>
+    <p>
+      From ComeToS written in Python to Citrus Antivirus, Citrus VPN, and CitrusOS—
+      we craft tools that blend technical mastery with storytelling flair.
+    </p>
+    <a href="#projects" class="btn">See Achievements</a>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section container">
+    <h2>Our Achievements</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>ComeToS</h3>
+        <p>Mythic OS built in Python with lore-driven boot sequences.</p>
+      </div>
+      <div class="card">
+        <h3>Citrus Antivirus</h3>
+        <p>Lightweight, fast, and secure malware protection engine.</p>
+      </div>
+      <div class="card">
+        <h3>Citrus VPN</h3>
+        <p>Encrypted tunnels wrapped in a sleek, user-friendly GUI.</p>
+      </div>
+      <div class="card">
+        <h3>CitrusOS</h3>
+        <p>A unified platform combining Citrus stack tools and UI mood rings.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Future Projects -->
+  <section id="future" class="section container alt-background">
+    <h2>What’s Next?</h2>
+    <ul class="future-list">
+      <li>Spectral Device Mapping Module</li>
+      <li>EcoPhantom Pro Animated Dashboard</li>
+      <li>LeafChain: Blockchain for Sustainability</li>
+      <li>Sentient UI Companion (Emoji-driven)</li>
     </ul>
   </section>
 
-  <section class="actions">
-    <button onclick="runScan()">Run Eco Scan</button>
-    <button onclick="optimize()">Optimize Footprint</button>
-    <button onclick="showTip()">Eco Tip</button>
-    <button onclick="generateCert()">Generate Certificate</button>
-  </section>
-
-  <section class="log">
-    <h2>Logs</h2>
-    <div id="logOutput">🧠 Ready to greenify your system...</div>
-  </section>
-
-  <footer>
-    <p>Made with 🌿 by Steam</p>
+  <!-- Contact / Footer -->
+  <footer id="contact" class="site-footer container">
+    <h2>Get in Touch</h2>
+    <p>
+      Interested in collaborating or learning more? Drop me a line at
+      <a href="mailto:steam@example.com">steam@example.com</a>.
+    </p>
+    <div class="social">
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Twitter</a>
+    </div>
+    <p class="small">&copy; 2025 SteamTech. All rights reserved.</p>
   </footer>
-
-  <script src="main.js"></script>
 </body>
 </html>
